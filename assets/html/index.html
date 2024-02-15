@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Alejandra Olazagasti">
+  <meta name="description" content="No más de 165 caracteres">
+  <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3">
+  <meta name="theme-color" content="#09f">
+  <!-- Iconos  -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!-- tipografía  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+  <title>Portafolio</title>
+
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="module" src="assets/js/main.js" defer></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "wAdOJ63_0q37stjY5",
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar grid--container">
+      <a class="navbar__logo" href="#"><i class='bx bxs-registered'></i>Mauro</a>
+
+      <div id="nav" class="navbar__menu">
+        <a href="#close"><i class="bx bx-x btn__close navbar__icon"></i></a>
+
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link active" href="#home">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#about">About me</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills">Skills</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects">Portfolio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar__toggles">
+        <div class="navbar__toggle--darkmode">
+          <input type="checkbox" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
+          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+            <i class='bx bx-sun navbar__toggle--darkmode-sun'></i>
+            <i class='bx bx-moon navbar__toggle--darkmode-moon'></i>
+          </label>
+        </div>
+        <div class="navbar__toggle--language">
+          <input type="checkbox" id="language-toggle" class="navbar__toggle--language-input" />
+          <label for="language-toggle" class="navbar__toggle--language-label">
+        </div>
+      </div>
+      <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="home">
+      <i class='bx bxl-html5 home__layer home__layer--1' data-speed="-5"></i>
+      <i class='bx bxl-javascript home__layer home__layer--2' data-speed="5"></i>
+      <i class='bx bxl-css3 home__layer home__layer--3' data-speed="2"></i>
+      <i class='bx bxl-nodejs home__layer home__layer--4' data-speed="6"></i>
+      <i class='bx bxl-react home__layer home__layer--5' data-speed="8"></i>
+      <i class='bx bxl-tailwind-css home__layer home__layer--6' data-speed="-2"></i>
+      <i class='bx bxl-redux home__layer home__layer--7' data-speed="4"></i>
+      <i class='bx bxl-typescript home__layer home__layer--8' data-speed="-2"></i>
+      <i class='bx bxl-git home__layer home__layer--9' data-speed="6"></i>
+      <i class='bx bxl-graphql home__layer home__layer--10' data-speed="-7"></i>
+      <i class='bx bx-code-alt home__layer home__layer--11' data-speed="-5"></i>
+      <div class="home__container grid--container">
+        <div class="home__image">
+          <span></span>
+          <img src="assets/img/profile.png" alt="profile photo" />
+        </div>
+
+        <ul class="home__social">
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://www.linkedin.com/in/mauro-enrique-cubas-caballero-180a01154/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://wa.me/+51977603720?text=Tu%20Mensaje%20De%20Texto" target="_blank"><i class='bx bxl-whatsapp' target="_blank"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="https://github.com/devCubas" target="_blank"><i class='bx bxl-github'></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link" href="mailto:pfedericpicaso@gmail.com"><i class='bx bx-envelope'></i></a>
+          </li>
+        </ul>
+
+        <div class="home__info">
+
+          <h1 class="home__title">Hi, I'm Mauro</h1>
+
+          <p class="home__description">
+            I am a web developer, passionate about technology and programming.
+          </p>
+        </div>
+
+        <div class="home__buttons">
+          <button class="btn btn--primary" type="button">Download CV</button>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="about" class="about section">
+      <h2 class="section__title">About me</h2>
+
+      <div class="about__container grid--container">
+        <p class="about__description">
+            I really like technology, that's why I decided to train as a professional in Full Stack, I play Basketball and Soccer, I am fascinated by all types of music and being with family and friends.
+        </p>
+
+        <div class="about__cards">
+          <!--Card 1 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_1.jpg" alt="Laborando como ingeniero">
+          </div>
+          <!--Card 2 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_2.jpg" alt="Laborando como diseñador">
+          </div>
+          <!--Card 3 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_3.jpg" alt="Trabajando en equipo">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="skills" class="skills section">
+      <h2 class="section__title">Habilidades</h2>
+
+      <div class="skills__container grid--container">
+        <p class="skills__description">
+            As a Full Stack Developer I have skills in both frontend and backend development of web applications. I am proficient in programming languages such as HTML, CSS, JavaScript, and frameworks such as React on the frontend.
+        </p>
+
+        <div class="skills__wrapper">
+          <div class="skills__cards">
+            <!--Card 1 -->
+            <input type="radio" name="slide" id="c1" checked class="skills__input">
+            <label for="c1" class="skills__card">
+              <div class="skills__card-row">
+                <i class="bx bxl-html5"></i>
+                <div class="skills__description">
+                  <h3 class="skills__card-title">HTML</h3>
+                  <p>I am a professional in HTML5. Since discovering my passion for web design and programming, I have spent countless hours mastering this markup language. With a solid foundation in HTML5, I feel qualified to create modern, responsive and interactive websites.
+
+                    My experience has led me to deeply understand the structure and semantics of HTML5, allowing me to write clean and efficient code. Additionally, I am aware of the latest specifications and trends in web development, allowing me to stay up to date in an ever-evolving field.</p>
+                </div>
+              </div>
+            </label>
+            <!--Card 2 -->
+            <input type="radio" name="slide" id="c2" checked class="skills__input">
+            <label for="c2" class="skills__card">
+              <div class="skills__card-row">
+                <i class="bx bxl-css3"></i>
+                <div class="skills__description">
+                  <h3 class="skills__card-title">CSS3</h3>
+                  <p>I consider myself a CSS professional, a digital architect who gives life and style to web pages. My day to day involves more than just writing code; I am a digital artist, painting visual landscapes on each user's screen. Every line of code I write has a purpose, every style I apply has an impact on the user experience.</p>
+                </div>
+              </div>
+            </label>
+            <!--Card 3 -->
+            <input type="radio" name="slide" id="c3" checked class="skills__input">
+            <label for="c3" class="skills__card">
+              <div class="skills__card-row">
+                <i class="bx bxl-javascript"></i>
+                <div class="skills__description">
+                  <h3 class="skills__card-title">Javascript</h3>
+                  <p>I am a JavaScript professional passionate about creating innovative and functional web applications. My day to day consists of writing clean and efficient code to develop solutions that meet the needs of my clients and end users.
+                    ​</p>
+                </div>
+              </div>
+            </label>
+            <!--Card 4 -->
+            <input type="radio" name="slide" id="c4" checked class="skills__input">
+            <label for="c4" class="skills__card">
+              <div class="skills__card-row">
+                <i class='bx bxl-react'></i>
+                <div class="skills__description">
+                  <h3 class="skills__card-title">React</h3>
+                  <p>I'm a React professional passionate about creating dynamic and efficient user interfaces. My day-to-day involves translating user designs and concepts into reusable and scalable React components. With a solid understanding of JavaScript and its ecosystem, I am constantly exploring new ways to optimize application performance and usability.
+
+                 </p>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="skills__tags">
+          <h3 class="skills__tags-title">Soft skills</h3>
+          <div class="skills__tags-container">
+            <span class="skills__tag">Responsible</span>
+            <span class="skills__tag">Teamwork</span>
+            <span class="skills__tag">Creative</span>
+            <span class="skills__tag">Punctual</span>
+            <span class="skills__tag">Proactive</span>
+            <span class="skills__tag">Efficient</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section">
+      <h2 class="section__title">Projects</h2>
+      <!-- PROYECTO 1  -->
+      <div class="projects__container grid--container">
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project1.jpg" alt="project 1" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Project 1</h3>
+              <p class="projects__description">
+                NEW THINGS COMING SOON
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                SHOW DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                SHOW CODE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROYECTO 2  -->
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project2.png" alt="project 2" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Project 2</h3>
+              <p class="projects__description">
+                NEW THINGS COMING SOON
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                SHOW DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                SHOW CODE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROYECTO 3 -->
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project3.jpg" alt="project 3" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Project 3</h3>
+              <p class="projects__description">
+                NEW THINGS COMING SOON
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                SHOW DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                SHOW CODE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROYECTO 4  -->
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project4.png" alt="project 4" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Project 4</h3>
+              <p class="projects__description">
+                NEW THINGS COMING SOON
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                SHOW DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                SHOW CODE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <h2 class="section__title">Contact</h2>
+
+      <div class="contact__container grid--container">
+        <div class="contact__info">
+          <h3 class="contact__info-title">Contact information</h3>
+          <p class="contact__info-description">
+            Here you have the means where I am 24/7.
+          </p>
+
+          <address class="contatc__info-data">
+            <div class="contact__info-item">
+              <i class='bx bxl-whatsapp'></i>
+
+              <span class="contact__info-number">
+                <a href="https://wa.me/+51977603720?text=Tu%20Mensaje%20De%20Texto" target="_blank">Send message to
+                    WhatsApp</a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-phone"></i>
+
+              <span class="contact__info-number">
+                <a href="tel:1-234-567-8910"> +51 997 603 720 </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bxs-envelope"></i>
+
+              <span class="contact__info-mail">
+                <a id="mail" href="mailto:pfedericpicaso@gmail.com"> My email </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-map"></i>
+
+              <span class="contact__info-map"> Iquitos, Perú. </span>
+            </div>
+          </address>
+        </div>
+
+        <div class="contact__form">
+          <h3 class="contact__form-title">Enviar mensaje</h3>
+          <form id="form" class="contact__form-container">
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label">Nombre</label>
+              <input type="text" id="name" name="name" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label">Correo</label>
+              <input type="email" id="email" name="email" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="subject" class="contact__form-label">Asunto</label>
+              <input type="text" id="subject" name="subject" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__form-label">Mensaje</label>
+              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
+            </div>
+            <dialog id="modal">
+              Formulario enviado con éxito!
+              <button type="reset" id="btn_close-modal">Cerrar</button>
+            </dialog>
+
+            <button type="submit" class="btn contact__form-button">
+              Enviar
+            </button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section">
+    <div class="footer__container grid--container">
+      <div class="footer__info">
+        <h3 class="footer__title">Mauro E. Cubas Caballero</h3>
+        <p class="footer__description">
+            I am a Full Stack Web developer, passionate about technology and
+            programming.
+        </p>
+      </div>
+
+      <div class="footer__social">
+        <h3 class="footer__title">Social networks</h3>
+
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://web.facebook.com/mauro.cubascaballero" target="_blank"><i class="bx bxl-facebook"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.instagram.com/mauro_cc2002/" target="_blank"><i class="bx bxl-instagram"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://twitter.com/ElPelon2002" target="_blank"><i class="bx bxl-twitter"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.linkedin.com/in/mauro-enrique-cubas-caballero-180a01154/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copy"></p>
+  </footer>
+</body>
+
+</html>
